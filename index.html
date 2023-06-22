@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css2.css">
+
+   <style>
+    img {
+  border: 5px solid #555 wid;
+}
+   </style>
+    
+</head>
+<body>
+    <div class="Header">
+        
+        <nav>
+            <h1>Portfo<span>lio</span></h1>
+            <br>
+            <ul id="nav1">
+                <li><a href="#A1">About</a></li>
+                <li><a href="#A2">Education</a></li>
+                <li><a href="#A4">Certifications</a></li>
+                <li><a href="#A5">Project</a></li>
+                <li><a href="#A6">Time table</a></li>
+                <li><a href="#A7">Millet year assignment</a></li>
+                <li><a href="#contact">Contact us</a></li>
+
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 >This is Saras kakde digital Portfolio</h3>
+        </div>
+    </div>
+
+    <!-------Abou Section-------->
+    <section class="About">
+        <img src="Saras's bhagva pic.jpg" width="300" height="400">
+        <div class="about-text">
+             <h2 id="A1">About Me</h2>
+            <p>I'am a first year student currently pursuing my btech engineering from MITAOE Alandi,Pune.
+                <br>
+               My branch is Electronics & Telecommunication.
+                
+            </p>
+        </div>
+    </section>
+     
+    <section class="Education">
+        <h2 id="A2">Education</h2>
+        <ul>
+            <li>
+                10th-Dilasagram convent school,Ballarpur,Chandrapur.
+                percentage : 86.6%
+            </li>
+            <li>
+                12th-Gurunanak college of science,Ballarpur,Chandrapur.
+                percentage : 76.5%
+            </li>
+            <li>
+                Pursuing 1st year Btech in MIT AOE ,Alandi,Pune.
+            </li>
+        </ul>
+        
+            </section>
+            
+            <section class="Certifications">
+                <h2 id="A4">Certifications</h>
+                <p>
+                    <h3>Cissco</h3>
+                </p>
+              
+            </section>
+          
+        <section class="Project">
+            <h2 id="A5">Project</h2>
+            <ul>
+                <p> <h3>IOT PROJECT</h3>
+                    <br>
+                    <h3>Problem statement : Photosynthesis of spinach using IOT.</h3>
+                    <br>
+                    <img src="Screenshot (1116).png" width="300px" height="300px">
+                    <br>
+                    <h3>code:</h3>
+                    <ul>
+                        int LDRInput=A0; //Set Analog Input A0 for LDR.
+int LED=2;<br>
+void setup() {<br>
+Serial.begin(9600);<br>
+pinMode(LDRInput,INPUT);<br>
+pinMode(2,OUTPUT);<br>
+}<br>
+
+void loop() {<br>
+int value=analogRead(LDRInput);//Reads the Value of LDR(light).<br>
+Serial.println("LDR value is :");//Prints the value of LDR to Serial Monitor.<br>
+Serial.println(value);<br>
+if(value<300)<br>
+  {<br>
+    digitalWrite(LED,HIGH);//The LED turns ON in Dark.<br>
+  }<br>
+  else<br>
+  {<br>
+    digitalWrite(LED,LOW);//The LED turns OFF in Light.<br>
+  }<br>
+}
+                    </ul>
+                </p>
+            </ul>
+        </section>
+    
+        <section class="Time table">
+            <h2 id="A6">Time table</h2>
+            <table>
+                <tr>
+                    <th>Day\Time</th>
+                    <th>8:30am to 9:25am</th>
+                    <th>9:25am to 10:20am</th>
+                    <th>10:20am to 10:30am</th>
+                    <th>10:30am to 11:25am</th>
+                    <th>11:25am to 12:20pm</th>
+                    <th>12:20pm to 13:15pm</th>
+                    <th>13:15pm to 14:10pm</th>
+                    <th>14:10pm to 15:05pm</th>
+                    <th>15:05pm to 15:10pm</th>
+                    <th>15:10pm to 16:00pm</th>
+                    <th>16:00pm to 16:50pm</th>
+                    
+                </tr>
+                <tr>
+                    <td>MONDAY</td>
+                    <td colspan="2">EGR CAD</td>
+                    <td rowspan="6">SHORT BREAK</td>
+                    <td colspan="2">EGR DH</td>
+                    <td rowspan="6">LUNCH BREAK</td>
+                    <td colspan="2">EDS</td>
+                    <td rowspan="6">SHORT BREAK</td>
+                    <td colspan="2">GUEST LECTURE</td>
+
+                </tr>
+                <tr>
+                    <td>TUESDAY</td>
+                    <td colspan="2">OFFICE HOURS</td>
+                    <td>SIC</td>
+                    <td>PHY</td>
+                    <td>EEE</td>
+                    <td>EEE</td>
+                    <td>MT</td>
+                    <td></td>
+
+                </tr>
+                <tr>
+                    <td>WEDNESDAY</td>
+                    <td>ET</td>
+                    <td>PHY</td>
+                    <td colspan="2">PHY</td>
+                    <td colspan="2">EEE</td>
+                    <td colspan="2">ET</td>
+
+                </tr>
+                <tr>
+                    <td>THURSDAY</td>
+                    <td colspan="2"></td>
+                    <td colspan="2">EDS</td>
+                    <td></td>
+                    <td>EDS</td>
+                    <td>SIC</td>
+                    <td colspan="2">EGR DH</td>
+
+                </tr>
+                <tr>
+                    <td>FRIDAY</td>
+                    <td>EDS</td>
+                    <td>SIC</td>
+                    <td>EEE</td>
+                    <td>PHY</td>
+                    <td colspan="2">FE</td>
+                    <td>MENTORING</td>
+                    <td>SPORT</td>
+
+                </tr>
+                <tr>
+                    <td>SATURDAY</td>
+                    <td colspan="2">INDIAN CONSTITUTION</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+
+                </tr>
+            </table>
+
+        </section>
+
+        <section class="Form">
+            <h2 id="A7">Form</h2>
+            <form action="/action_page.php">
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname"><br><br>
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname"><br><br>
+
+                <label for="birthday">Birthday:</label>
+<input type="date" id="birthday" name="birthday">
+<label for="pwd">Password:</label>
+<input type="password" id="pwd" name="pwd"><br> <br>
+                <input type="submit" value="Submit">
+              </form>
+        </section>
+
+        <section class="Millet year assignment">
+            <h2>Millet year assignment</h2>
+            <title>Title of the document</title>
+            <p>Open a PDF file<a href="524_ET_IA_ASSIGNMENT 1.pdf">Millet year pdf</a>.</p>
+
+        </section>
+        
+       
+
+  <!------Contact Section------>    
+  <section id="contact">
+    <h1  class="headings" >CONTACT</h1>
+    <form action="" class="form">
+    <input type="text" name="name" class="input" placeholder="Enter Your Name">
+    <input type="email" name="email" class="input"
+    placeholder="Enter Your Email">
+    <textarea name="msg" id="msg" cols="30" rows ="10"
+    piacehoider="Enter Your Message" ></textarea>
+    <input type="submit" value="SEND" id="send">
+    </form>
+    </section>
+    <footer>&#169 2023 Saras Kakde</footer>
+    
+   </body>   
+</html>
